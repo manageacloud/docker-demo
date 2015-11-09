@@ -45,7 +45,7 @@ infrastructures:
         name: demo
         provider: amazon
         location: us-east-1
-        hardware: t1.micro
+        hardware: t2.small
         role: wordpress_app
         environment:
         - APP_BRANCH: master
