@@ -1,7 +1,7 @@
 mac: 0.9.27
 description: Wordpress Demo on Docker
-name: demo
-version: 1.0
+name: docker_wordpress
+version: {WORDPRESS_VERSION}
 
 roles:
     demo_app:
