@@ -4,7 +4,7 @@ name: docker_wordpress
 version: {WORDPRESS_VERSION}
 
 roles:
-    demo_app:
+    wordpress_app:
       instance create:
             configuration: docker_wordpress_demo
 actions:
@@ -55,10 +55,10 @@ infrastructures:
         - WORDPRESS_VERSION={WORDPRESS_VERSION}
         
     register_instance:
-        ready: role.demo_app
+        ready: role.wordpress_app
         resource: register_lb
         params:
             load-balancer-name: my-demo-load-balancer
-            instances: role.demo_app.get_id
+            instances: role.wordpress_app.get_id
             region: us-east-1
         
