@@ -54,6 +54,6 @@ infrastructures:
         #ready: role.tomcat_app
         resource: register_lb
         params:
-            load-balancer-name: my-demo-load-balancer
+            load-balancer-name: lb-{TOMCAT_VERSION}
             instances: role.tomcat_app.get_id
             region: us-east-1
