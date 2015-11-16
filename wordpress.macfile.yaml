@@ -33,7 +33,7 @@ resources:
                 --region infrastructure.param.region
 
 infrastructures:
-    load balancer 01:
+    load_balancer_01:
         resource: elastic_load_balancer
         params:
             name: my-demo-load-balancer
@@ -55,7 +55,7 @@ infrastructures:
         - WORDPRESS_VERSION: {WORDPRESS_VERSION}
         
     register_instance:
-        ready: role.wordpress_app
+        #ready: role.wordpress_app
         resource: register_lb
         params:
             load-balancer-name: my-demo-load-balancer
