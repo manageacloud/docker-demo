@@ -47,6 +47,7 @@ infrastructures:
         location: us-east-1
         hardware: t2.small
         role: tomcat_app
+        net: subnet-15086e3e
         environment:
         - TOMCAT_VERSION: {TOMCAT_VERSION}
         
