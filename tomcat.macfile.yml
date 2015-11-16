@@ -36,7 +36,7 @@ infrastructures:
     load_balancer_01:
         resource: elastic_load_balancer
         params:
-            name: my-demo-load-balancer
+            name: lb-{TOMCAT_VERSION}
             listeners: Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=80
             availability-zones: us-east-1b us-east-1c
             region: us-east-1
