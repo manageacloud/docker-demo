@@ -48,7 +48,7 @@ infrastructures:
         hardware: t2.small
         role: tomcat_app
         environment:
-        - TOMCAT_VERSION: {WORDPRESS_VERSION}
+        - TOMCAT_VERSION: {TOMCAT_VERSION}
         
     register_instance:
         #ready: role.tomcat_app
